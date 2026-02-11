@@ -103,13 +103,13 @@ body p {
     color: black;
     overflow: hidden;
     font-family: Noto Sans, sans-serif;
-    text-decoration: none;
 }
 
-/* Heading */
+/* Headings */
 h1, h2, h3, h4, h5, h6 {
     font-style:italic;
     color: #344d5a;
+    text-align: left;
 }
 
 /* images */
