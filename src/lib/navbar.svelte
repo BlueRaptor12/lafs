@@ -1,5 +1,7 @@
 <nav style="text-align: center;">
     <img src="src/Images/falcon1.png" alt="logo">
+    <img src="src/Images/falcon1.png" alt="logo" style="float: right;">
+    <h1>Skyridge Lost and Found</h1>
     <a href="/">Home</a> &nbsp &nbsp;
     <a href="/report">Report Lost Item</a> &nbsp &nbsp;
     <a href="/view">View Found Items</a> &nbsp &nbsp;

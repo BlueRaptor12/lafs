@@ -3,6 +3,8 @@
 </div>
 
 <div class="header-bg">
-    <img src="src/Images/skyridge1.jpeg" alt="skyridge">
+    <img src="src/Images/skyridge1.jpeg" alt="skyridge" style="display: block;">
 </div>
+<body>
 
+</body>
