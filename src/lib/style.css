@@ -135,3 +135,28 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #606972;
 }
 
+/* Item Listings */
+.items {
+    text-align: center;
+    color: #344d5a;
+    font-weight: bold;
+}
+
+.items img {
+    margin-top: 20px;
+    border: #E74302 solid;
+    border-radius: 20px;
+    border-width: 8px;
+    width: 60%;
+}
+
+/* Item Submission */
+.report button {
+    background-color: #606972;
+    color: #CC5500;
+}
+
+.report button :hover {
+    color: #E74302;
+    letter-spacing: 8px;
+}

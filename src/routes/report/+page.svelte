@@ -7,17 +7,23 @@
 <p>Item reported</p>
 {/if}
 
-<p>Have any items to report? You're in the right place.</p>
+<h2>Have any items to report? You're in the right place.</h2>
 <form method="POST" enctype="multipart/form-data" action="?/report">
+    <div class="report">
     <label>
-        Item Description:
-        <textarea name="desc"></textarea>
+        <h3>Item Description:</h3>
+        <div style="padding-left: 15%;"><textarea name="desc"></textarea></div>
     </label>
     <label>
-        Image:
+        <h3>Image:</h3>
+        <div style="padding-left: 20%;">
         <input type="file" name="img" />
+        </div>
     </label>
-    <button>Submit</button>
+    <div style="padding-left: 15%;">
+        <button>Submit</button>
+     </div>
+    </div>
 </form>
 
 <style>
