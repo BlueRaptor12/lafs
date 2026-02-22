@@ -16,7 +16,7 @@
     </label>
     <label>
         <h3>Image:</h3>
-        <div style="padding-left: 20%;">
+        <div style="padding-left: 20%">
         <input type="file" name="img" />
         </div>
     </label>

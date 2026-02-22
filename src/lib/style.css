@@ -160,3 +160,9 @@ h1, h2, h3, h4, h5, h6 {
     color: #E74302;
     letter-spacing: 8px;
 }
+
+.file {
+     background-color: #606972;
+    color: #CC5500;
+    padding-left: 20%;
+}
