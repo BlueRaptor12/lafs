@@ -3,29 +3,31 @@
     let { data, form }: PageProps = $props();
 </script>
 
-{#if form?.success}
-<p>Item reported</p>
-{/if}
 
-<h2>Have any items to report? You're in the right place.</h2>
+
+<div style="text-align: center;">
+<h2>Have a found item to report? Report it here and take it to the Lost and Found.</h2>
 <form method="POST" enctype="multipart/form-data" action="?/report">
     <div class="report">
     <label>
-        <h3>Item Description:</h3>
-        <div style="padding-left: 15%;"><textarea name="desc"></textarea></div>
+<textarea name="desc" placeholder="Item Description, Date, and where it was Found"></textarea>
     </label>
     <label>
-        <h3>Image:</h3>
-        <div style="padding-left: 20%">
+        <h3 style="text-align: center;">Item Image:</h3>
         <input type="file" name="img" />
-        </div>
     </label>
-    <div style="padding-left: 15%;">
+    <br>
+    <br>
         <button>Submit</button>
-     </div>
     </div>
 </form>
 
+{#if form?.success}
+<p>Item reported successfully</p>
+{/if}
+
+
+</div>
 <style>
     textarea {
         width: 300px;

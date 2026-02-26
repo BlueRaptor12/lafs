@@ -61,7 +61,7 @@ header {
 /* navigation bar styles */
 
 nav a {
-    color: #f68026;
+    color: #ffffff;
     text-align: left;
     overflow: hidden;
     font-size: 17px;
@@ -118,8 +118,7 @@ h1, h2, h3, h4, h5, h6 {
     font-style:italic;
     font-weight: bold;
     color: #4B4E53;
-    text-align: left;
-    padding-left: 15%;
+    text-align: center;
 }
 
 /* Images */
@@ -135,7 +134,7 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #606972;
 }
 
-/* Item Listings */
+/* Item Listing and Searching */
 .items {
     text-align: center;
     color: #344d5a;
@@ -147,13 +146,18 @@ h1, h2, h3, h4, h5, h6 {
     border: #E74302 solid;
     border-radius: 20px;
     border-width: 8px;
-    width: 60%;
+    height: 700px;
+}
+
+.search {
+    text-align: center;
 }
 
 /* Item Submission */
 .report button {
-    background-color: #606972;
-    color: #CC5500;
+    background-color: #6d747a;
+    color: #f88d41;
+    padding-left: 5px;
 }
 
 .report button :hover {
@@ -162,7 +166,80 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .file {
-     background-color: #606972;
+     background-color: #6d747a;
     color: #CC5500;
-    padding-left: 20%;
+}
+
+button {
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    border-radius: 5px;
+    color: black;
+}
+
+input {
+    border-radius: 2px;
+}
+
+/* Sidescroll */
+
+.sidescroll {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.logos {
+    overflow: hidden;
+    padding: 60px 0;
+        white-space: nowrap;
+        position: relative;
+}
+
+.logos:before,
+.logos:after {
+     position:absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+}
+
+.logos:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), #cdd4d8);
+}
+
+.logos:after {
+     right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), #cdd4d8);
+}
+
+.logos:hover .logos-slide {
+    animation-play-state: paused;
+}
+
+.logos-slide { 
+    display: inline-block;
+    animation: 15s slide infinite linear;
+}
+
+.logos-slide img {
+    width: 110px;
+    margin-left: 160px;
 }
