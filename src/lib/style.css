@@ -103,8 +103,10 @@ nav img {
 body {
     display: block;
     margin: 0;
+    padding: 0;
     font-family: Noto Sans, sans-serif;
     background-color: #cdd4d8;
+    overflow-x: hidden;
 }
 
 body p {
@@ -137,16 +139,41 @@ h1, h2, h3, h4, h5, h6 {
 /* Item Listing and Searching */
 .items {
     text-align: center;
-    color: #344d5a;
+    color: #ffffff;
     font-weight: bold;
+    display: grid;
+    align-items: center;
+    column-gap: 9rem;
+    row-gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 5rem;
+    
+}
+
+.items p {
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 0;
+    color: #ffffff;
 }
 
 .items img {
-    margin-top: 20px;
-    border: #E74302 solid;
+ 
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.image-card {
+     border: #E74302 solid;
     border-radius: 20px;
-    border-width: 8px;
-    height: 700px;
+    border-width: 8px; 
+    background-color: #606972;
+    color: #ffffff;
 }
 
 .search {
@@ -230,9 +257,9 @@ input {
     background: linear-gradient(to right, rgba(255, 255, 255, 0), #cdd4d8);
 }
 
-.logos:hover .logos-slide {
+/* .logos:hover .logos-slide {
     animation-play-state: paused;
-}
+} */
 
 .logos-slide { 
     display: inline-block;
