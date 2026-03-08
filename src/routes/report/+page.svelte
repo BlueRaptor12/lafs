@@ -10,7 +10,7 @@
 <form method="POST" enctype="multipart/form-data" action="?/report">
     <div class="report">
     <label>
-<textarea name="desc" placeholder="Item Description, Date, and where it was found"></textarea>
+<textarea name="desc" placeholder="Item Description and where it was found"></textarea>
     </label>
     <label>
         <h3 style="text-align: center;">Image of the item is required. Upload it here:</h3>

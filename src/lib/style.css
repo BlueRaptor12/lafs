@@ -116,7 +116,7 @@ body p {
 }
 
 /* Headings */
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5 {
     font-style:italic;
     font-weight: bold;
     color: #4B4E53;
@@ -134,6 +134,12 @@ h1, h2, h3, h4, h5, h6 {
 .footer{
     font-family: Noto Sans, sans-serif;
     background-color: #606972;
+    color: #FFFFFF;
+    font-style:italic;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom: 2px;
 }
 
 /* Item Listing and Searching */
@@ -157,6 +163,8 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     padding-top: 5px;
     padding-bottom: 0px;
+    padding-left: 2px;
+    padding-right: 2px;
     margin: 0;
     color: #ffffff;
 }

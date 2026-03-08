@@ -25,3 +25,7 @@
 <div class="header-bg">
     <img src={skyridge_exterior} alt="skyridge" style="display: block;">
 </div>
+
+<div class="footer">
+<h6>Images are copyright of Noun Project</h6>
+</div>
